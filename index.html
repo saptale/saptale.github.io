@@ -28,8 +28,9 @@
         .video-container { width: 100%; border-radius: 8px; overflow: hidden; margin: 15px 0; border: 1px solid #333; background: #000; }
         .video-container iframe { width: 100%; height: 450px; border: none; display: block; }
         
-        .freelance-grid { display: flex; gap: 15px; margin: 15px 0; }
-        .freelance-item { flex: 1; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
+        /* Обновленная сетка для видео, чтобы они красиво переносились */
+        .freelance-grid { display: flex; gap: 15px; margin: 15px 0; flex-wrap: wrap; }
+        .freelance-item { flex: 1; min-width: 250px; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
         .freelance-item iframe { width: 100%; height: 250px; border: none; display: block; }
         .freelance-title { padding: 10px; background: #1e1e1e; font-size: 0.9em; color: #aaa; text-align: center; border-bottom: 1px solid #333; }
         
@@ -112,11 +113,51 @@
         </div>
 
         <div class="project">
+            <h3>Rapid Gameplay Prototype (Pet Project)</h3>
+            <p><strong>Format:</strong> Personal Project</p>
+            <p>A fast-paced gameplay prototype demonstrating core movement, physics, and interaction mechanics. Showcased from multiple gameplay angles.</p>
+            
+            <div class="freelance-grid">
+                <div class="freelance-item">
+                    <iframe src="https://drive.google.com/file/d/1g8Q1Y9WB2q5DhyvAIqqw_2BXfgSyRoRQ/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="freelance-item">
+                    <iframe src="https://drive.google.com/file/d/16QQN1Drs6ThBG7RAfS3hWJ_6VjuIdzfJ/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Rapid Prototyping</span>
+                <span class="tag">Game Mechanics</span>
+                <span class="tag">Gameplay Loop</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Custom Logic Prototype (Pet Project)</h3>
+            <p><strong>Format:</strong> Personal Project</p>
+            <p>Development of custom game logic and interactions in a rapid prototyping environment.</p>
+            
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1EriPQH9MxjtfR_M2VJReo4c35is2VQdJ/preview" allow="autoplay" allowfullscreen></iframe>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Gameplay Programming</span>
+                <span class="tag">Custom Logic</span>
+            </div>
+        </div>
+
+        <div class="project">
             <h3>Freelance & Rapid Prototyping</h3>
             <p><strong>Role:</strong> Freelance Developer</p>
             <p>Examples of high-efficiency prototyping developed according to precise technical specifications and platform standards (e.g., Yandex Games).</p>
             
             <div class="freelance-grid">
+                <div class="freelance-item">
+                    <div class="freelance-title">Client Prototype</div>
+                    <iframe src="https://drive.google.com/file/d/1EFmW0nfoIgAWp7AAOcmaT27wRcmIZ8uM/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
                 <div class="freelance-item">
                     <div class="freelance-title">Technical Task Execution (ТЗ)</div>
                     <iframe src="https://drive.google.com/file/d/1N7WF07ILjDIEqWptARxBQ8-mpHOeflkm/preview" allow="autoplay" allowfullscreen></iframe>
@@ -133,6 +174,7 @@
                 <span class="tag">Yandex Games API</span>
             </div>
         </div>
+
     </section>
 
     <section id="skills">
