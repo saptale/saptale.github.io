@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evgenii Maklaev - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background-color: #121212;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { color: #ffffff; margin-bottom: 5px; }
+        h2 { color: #64ffda; border-bottom: 1px solid #333; padding-bottom: 10px; margin-top: 40px; }
+        h3 { color: #ffffff; }
+        a { color: #64ffda; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-links { margin-top: 10px; }
+        .contact-links a { margin-right: 15px; font-weight: bold; }
+        .project { background: #1e1e1e; padding: 25px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        .tags { margin-top: 15px; }
+        .tag { background: #333; padding: 5px 10px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; display: inline-block; margin-bottom: 5px;}
+        .video-container { width: 100%; border-radius: 8px; overflow: hidden; margin: 15px 0; border: 1px solid #333; background: #000; }
+        .video-container iframe { width: 100%; height: 450px; border: none; display: block; }
+        
+        /* Сетка для фриланс-прототипов */
+        .freelance-grid { display: flex; gap: 15px; margin: 15px 0; }
+        .freelance-item { flex: 1; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
+        .freelance-item iframe { width: 100%; height: 250px; border: none; display: block; }
+        .freelance-title { padding: 10px; background: #1e1e1e; font-size: 0.9em; color: #aaa; text-align: center; border-bottom: 1px solid #333; }
+        
+        @media (max-width: 600px) {
+            .freelance-grid { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Evgenii Maklaev</h1>
+        <p><strong>Middle Unity / C# Developer</strong></p>
+        <div class="contact-links">
+            <a href="mailto:evgeniimaklaev@bk.ru">Email</a>
+            <a href="https://t.me/eltalione" target="_blank">Telegram</a>
+            <a href="https://github.com/saptale" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/evgenii-maklaev" target="_blank">LinkedIn</a>
+            <a href="https://docs.google.com/document/d/1J365j5pSgO4PXWDWwIl-Pk4gWNTQ37YO" target="_blank">📄 Download CV</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>C# developer focused on Unity with over 3.5 years of experience. I have solid commercial experience building complex interactive 3D applications (B2B/B2C) and game mechanics. I am capable of taking ownership of technical delivery, thriving in compact teams, and refactoring complex legacy code.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="project">
+            <h3>Interactive 3D Wardrobe Configurator (Commercial B2B/B2C)</h3>
+            <p><strong>Role:</strong> Key Software Engineer | <strong>Company:</strong> Room107</p>
+            <p>Co-developed a complex interactive 3D configurator for custom wardrobe systems. Acted as one of two core engineers, designing architecture, core business logic, and interaction mechanics.</p>
+            
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1UV2YPeww7z0ZDkWMW_lz_CoxYVTCu4kl/preview" allow="autoplay" allowfullscreen></iframe>
+            </div>
+
+            <div class="tags">
+                <span class="tag">C#</span>
+                <span class="tag">Unity 3D</span>
+                <span class="tag">Software Architecture</span>
+                <span class="tag">UI Development</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Vehicle Physics & Core Mechanics</h3>
+            <p><strong>Role:</strong> Core Developer | <strong>Format:</strong> "Begin the Game" Jam (SMP Racing Winner)</p>
+            <p>Demonstration of custom vehicle physics developed for a racing game jam. Focused on realistic handling, suspension tuning, and rigid body mechanics.</p>
+            
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1lHTE-eTOkRyNk1gt_1lYLVw4pO9I0uPe/preview" allow="autoplay" allowfullscreen></iframe>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Gameplay Programming</span>
+                <span class="tag">Unity Physics</span>
+                <span class="tag">RigidBody Dynamics</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Button Invaders (Space Invaders Remaster)</h3>
+            <p><strong>Format:</strong> Indie / Personal Project (WIP)</p>
+            <p>A modern take on the classic arcade game. Implementing updated visuals, polished game loops, and responsive mechanics.</p>
+            
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1UXhqvQ5aXxebP33F106IF-2LXwgOtSsb/preview" allow="autoplay" allowfullscreen></iframe>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Game Loop Logic</span>
+                <span class="tag">2D Mechanics</span>
+                <span class="tag">Input Handling</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Freelance & Rapid Prototyping</h3>
+            <p><strong>Role:</strong> Freelance Developer</p>
+            <p>Examples of fast and efficient prototyping tailored to specific client technical requirements and platform standards (e.g., Yandex Games).</p>
+            
+            <div class="freelance-grid">
+                <div class="freelance-item">
+                    <div class="freelance-title">Rapid Client Prototype (by TZ)</div>
+                    <iframe src="https://drive.google.com/file/d/1N7WF07ILjDIEqWptARxBQ8-mpHOeflkm/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="freelance-item">
+                    <div class="freelance-title">Yandex Games Prototype</div>
+                    <iframe src="https://drive.google.com/file/d/1boF4_r7Np7ssEdpwgMVMV-c77wiho4OI/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">Rapid Prototyping</span>
+                <span class="tag">Client Requirements</span>
+                <span class="tag">Yandex Games API</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Code Architecture & Refactoring Showcase</h3>
+            <p>Examples of my approach to clean, scalable C# code and legacy codebase optimization.</p>
+            <ul>
+                <li><a href="ССЫЛКА_НА_ТВОЙ_GIST_ИЛИ_РЕПО">State Machine (FSM) Implementation</a> - Clean architecture for game states.</li>
+                <li><a href="ССЫЛКА_НА_ТВОЙ_GIST_ИЛИ_РЕПО">Legacy Code Refactoring Case</a> - Before & After comparison of optimized logic.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Core Skills</h2>
+        <div class="tags">
+            <span class="tag">C#</span> <span class="tag">Unity</span> <span class="tag">OOP</span> 
+            <span class="tag">Design Patterns</span> <span class="tag">Legacy Code Refactoring</span> 
+            <span class="tag">Gameplay Programming</span> <span class="tag">Git</span>
+        </div>
+    </section>
+
+    <footer style="margin-top: 50px; text-align: center; color: #777; font-size: 0.9em;">
+        <p>© 2026 Evgenii Maklaev</p>
+    </footer>
+
+</body>
+</html>
