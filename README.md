@@ -1,10 +1,12 @@
 # Evgenii Maklaev — Personal Portfolio 🚀
 
 [![Website Status](https://img.shields.io/badge/Website-Live-brightgreen.svg)](https://saptale.github.io/)
+[![GitHub Repositories](https://img.shields.io/badge/GitHub-My%20Projects-181717.svg?logo=github)](https://github.com/saptale?tab=repositories)
 
 Welcome to the repository of my personal portfolio website. This page serves as a showcase of my commercial and indie projects, highlighting my skills in software architecture, game mechanics, and 3D application development.
 
-🌐 **Live Version:** [saptale.github.io](https://saptale.github.io/)
+🌐 **Live Website:** [saptale.github.io](https://saptale.github.io/)  
+💻 **My Repositories & Code:** [github.com/saptale](https://github.com/saptale?tab=repositories)
 
 ## 👨‍💻 About Me
 I am a **Middle Unity / C# Developer** with over 3.5 years of experience. I have solid commercial experience building complex interactive 3D applications (B2B/B2C) and game mechanics. I am capable of taking ownership of technical delivery, thriving in compact teams, and refactoring complex legacy code.
