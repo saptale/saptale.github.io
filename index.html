@@ -11,7 +11,7 @@
             line-height: 1.6;
             color: #e0e0e0;
             background-color: #121212;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -26,11 +26,13 @@
         .contact-links a { display: flex; align-items: center; gap: 8px; font-weight: 500; font-size: 0.95em; }
         .contact-links i { font-size: 1.1em; color: #64ffda; }
 
-        .project { background: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); flex: 1; }
+        .project { background: #1e1e1e; padding: 20px; border-radius: 8px; margin-bottom: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .tags { margin-top: 12px; }
         .tag { background: #333; padding: 4px 10px; border-radius: 4px; font-size: 0.8em; margin-right: 4px; display: inline-block; margin-bottom: 4px; color: #ccc;}
         
-        .project-grid { display: flex; gap: 20px; margin-bottom: 25px; }
+        .triple-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 25px; }
+        .triple-grid .project { margin-bottom: 0; display: flex; flex-direction: column; }
+        .triple-grid .project p { flex-grow: 1; font-size: 0.9em; }
 
         .video-container { 
             position: relative; 
@@ -52,8 +54,8 @@
         .skills-category { margin-bottom: 20px; }
         .skills-category h4 { margin-bottom: 10px; color: #aaa; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; }
 
-        @media (max-width: 850px) {
-            .project-grid { flex-direction: column; }
+        @media (max-width: 900px) {
+            .triple-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -72,83 +74,87 @@
         </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a <strong>Middle Unity / C# Developer</strong> with over 3.5 years of commercial experience. I specialize in bridging the gap between game design and development by building robust gameplay mechanics, complex 3D applications, and custom Editor tools. I thrive on taking full technical ownership, whether it's refactoring legacy code or architecting systems from scratch.</p>
-    </section>
-
     <section id="projects">
         <h2>Featured Work</h2>
 
         <div class="project">
             <h3>Interactive 3D Wardrobe Configurator (Commercial)</h3>
-            <p><strong>Company:</strong> Room107. Key engineer for a high-load B2B/B2C 3D customization system.</p>
+            <p><strong>Company:</strong> Room107. Lead engineer for a complex B2B/B2C 3D customization system with deep business logic.</p>
             <div class="video-container">
                 <iframe src="https://drive.google.com/file/d/1UV2YPeww7z0ZDkWMW_lz_CoxYVTCu4kl/preview" allowfullscreen></iframe>
             </div>
             <div class="tags">
-                <span class="tag">C#</span> <span class="tag">Architecture</span> <span class="tag">Business Logic</span>
+                <span class="tag">C#</span> <span class="tag">Architecture</span> <span class="tag">B2B/B2C</span>
             </div>
         </div>
 
         <div class="project">
             <h3>ScriptableObject Spreadsheet (Unity Tool)</h3>
-            <p>Open-source editor window for real-time balancing via UI Toolkit and Reflection.</p>
+            <p>Professional-grade editor window for real-time balancing using UI Toolkit and C# Reflection.</p>
             <div class="video-container">
                 <iframe src="https://drive.google.com/file/d/1GJSnWeykNh_fzNhMBORrnHZjgqgcU-DA/preview" allowfullscreen></iframe>
             </div>
             <div class="tags">
-                <span class="tag">UI Toolkit</span> <span class="tag">Editor Scripting</span> <span class="tag">Open Source</span>
+                <span class="tag">UI Toolkit</span> <span class="tag">Reflection</span>
                 <a href="https://github.com/saptale/ScriptableObject-Spreadsheet-Unity-Editor" target="_blank" style="margin-left: 10px;"><i class="fab fa-github"></i> GitHub</a>
             </div>
         </div>
 
-        <div class="project-grid">
-            <div class="project">
-                <h3>Undead Conquest</h3>
-                <p>Age of War style strategy prototype with wave management and unit AI.</p>
-                <div class="video-container">
-                    <iframe src="https://drive.google.com/file/d/1kohJ6XU70KZI67dBLQD5Ao-Bvbq74PLe/preview" allowfullscreen></iframe>
-                </div>
-                <div class="tags"><span class="tag">Strategy AI</span> <span class="tag">Wave System</span></div>
+        <div class="project">
+            <h3>Atmospheric Horror Prototype</h3>
+            <p>Experimental project focused on environmental storytelling, lighting, and scripted cinematic sequences to enhance player immersion.</p>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1NyBICBeoHyPnlEaDpFg4C3YhjIO3FrV4/preview" allowfullscreen></iframe>
             </div>
-            <div class="project">
-                <h3>Button Invaders</h3>
-                <p>Strategic internal project at Room107. Core architecture and gameplay loops.</p>
-                <div class="video-container">
-                    <iframe src="https://drive.google.com/file/d/1UXhqvQ5aXxebP33F106IF-2LXwgOtSsb/preview" allowfullscreen></iframe>
-                </div>
-                <div class="tags"><span class="tag">Lead Dev</span> <span class="tag">Project Execution</span></div>
+            <div class="tags">
+                <span class="tag">Cinematics</span> <span class="tag">Level Design</span> <span class="tag">Atmosphere</span>
             </div>
         </div>
 
-        <div class="project-grid">
+        <div class="project">
+            <h3>Undead Conquest</h3>
+            <p>Strategy prototype inspired by Age of War. Features wave management, automated unit AI, and dynamic lane combat mechanics.</p>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1kohJ6XU70KZI67dBLQD5Ao-Bvbq74PLe/preview" allowfullscreen></iframe>
+            </div>
+            <div class="tags"><span class="tag">Strategy AI</span> <span class="tag">Wave System</span></div>
+        </div>
+
+        <div class="triple-grid">
             <div class="project">
-                <h3>Black Hole Devourer</h3>
-                <p>Mobile prototype with physics interactions and dynamic mesh scaling.</p>
+                <h3>Black Hole</h3>
+                <p>Satisfying physics-based growth mechanic with mesh scaling.</p>
                 <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1EriPQH9MxjtfR_M2VJReo4c35is2VQdJ/preview" allowfullscreen></iframe>
                 </div>
-                <div class="tags"><span class="tag">Physics Logic</span> <span class="tag">Mesh Scaling</span></div>
+                <div class="tags"><span class="tag">Physics</span></div>
             </div>
             <div class="project">
                 <h3>Chicken Escape</h3>
-                <p>Subway Surfers-style runner with procedural spawning and mobile controls.</p>
+                <p>Procedural runner with mobile-first controls and object spawning.</p>
                 <div class="video-container">
                     <iframe src="https://drive.google.com/file/d/1EFmW0nfoIgAWp7AAOcmaT27wRcmIZ8uM/preview" allowfullscreen></iframe>
                 </div>
-                <div class="tags"><span class="tag">Mobile Controls</span> <span class="tag">Runner Mechanics</span></div>
+                <div class="tags"><span class="tag">Mobile</span></div>
+            </div>
+            <div class="project">
+                <h3>Button Invaders</h3>
+                <p>Internal strategic project focusing on core game loops and UI.</p>
+                <div class="video-container">
+                    <iframe src="https://drive.google.com/file/d/1UXhqvQ5aXxebP33F106IF-2LXwgOtSsb/preview" allowfullscreen></iframe>
+                </div>
+                <div class="tags"><span class="tag">Core Gameplay</span></div>
             </div>
         </div>
 
         <div class="project">
             <h3>Vehicle Physics & Dynamics</h3>
-            <p>Realistic handling and suspension tuning. Winner of "Begin the Game" Jam.</p>
+            <p>Realistic rigid body vehicle simulation with custom suspension and handling. Jam Winner.</p>
             <div class="video-container">
                 <iframe src="https://drive.google.com/file/d/1lHTE-eTOkRyNk1gt_1lYLVw4pO9I0uPe/preview" allowfullscreen></iframe>
             </div>
             <div class="tags">
-                <span class="tag">Unity Physics</span> <span class="tag">RigidBody</span> <span class="tag">Mechanics</span>
+                <span class="tag">Unity Physics</span> <span class="tag">Dynamics</span>
             </div>
         </div>
     </section>
@@ -164,13 +170,13 @@
         <div class="skills-category">
             <h4>Engineering</h4>
             <div class="tags">
-                <span class="tag">OOP / SOLID</span> <span class="tag">Design Patterns</span> <span class="tag">Legacy Refactoring</span> <span class="tag">DI (Dependency Injection)</span>
+                <span class="tag">OOP / SOLID</span> <span class="tag">Design Patterns</span> <span class="tag">Refactoring</span> <span class="tag">Dependency Injection</span>
             </div>
         </div>
     </section>
 
     <footer style="margin-top: 50px; text-align: center; color: #777; font-size: 0.9em;">
-        <p>© 2026 Evgenii Maklaev | Powered by Unity & C#</p>
+        <p>© 2026 Evgenii Maklaev | Built with Passion for Code</p>
     </footer>
 
 </body>
