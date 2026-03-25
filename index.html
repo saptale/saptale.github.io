@@ -28,14 +28,19 @@
         .video-container { width: 100%; border-radius: 8px; overflow: hidden; margin: 15px 0; border: 1px solid #333; background: #000; }
         .video-container iframe { width: 100%; height: 450px; border: none; display: block; }
         
-        /* Обновленная сетка для видео, чтобы они красиво переносились */
+        .tools-grid { display: flex; gap: 15px; margin: 15px 0; align-items: stretch; }
+        .tools-media { flex: 1; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; display: flex; align-items: center; }
+        .tools-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tools-media iframe { width: 100%; height: 300px; border: none; display: block; }
+
         .freelance-grid { display: flex; gap: 15px; margin: 15px 0; flex-wrap: wrap; }
         .freelance-item { flex: 1; min-width: 250px; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
         .freelance-item iframe { width: 100%; height: 250px; border: none; display: block; }
-        .freelance-title { padding: 10px; background: #1e1e1e; font-size: 0.9em; color: #aaa; text-align: center; border-bottom: 1px solid #333; }
         
-        @media (max-width: 600px) {
+        @media (max-width: 768px) {
+            .tools-grid { flex-direction: column; }
             .freelance-grid { flex-direction: column; }
+            .video-container iframe { height: 300px; }
         }
     </style>
 </head>
@@ -56,10 +61,34 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>I am a <strong>Middle Unity / C# Developer</strong> with over 3.5 years of commercial experience. I specialize in bridging the gap between game design and development by building robust gameplay mechanics, complex 3D applications, and custom Editor tools. Whether it's prototyping core game loops, refactoring heavy legacy architecture, or creating internal workflows that help teams ship faster, I thrive on taking full technical ownership of my projects.</p>    </section>
+        <p>I am a <strong>Middle Unity / C# Developer</strong> with over 3.5 years of commercial experience. I specialize in bridging the gap between game design and development by building robust gameplay mechanics, complex 3D applications, and custom Editor tools. Whether it's prototyping core game loops, refactoring heavy legacy architecture, or creating internal workflows that help teams ship faster, I thrive on taking full technical ownership of my projects.</p>
+    </section>
 
     <section id="projects">
         <h2>Featured Projects</h2>
+
+        <div class="project">
+            <h3>ScriptableObject Spreadsheet (Unity Editor Tool)</h3>
+            <p><strong>Role:</strong> Lead Developer | <strong>Project Type:</strong> Open Source Tooling</p>
+            <p>Developed a professional-grade Unity Editor window for massive data balancing. It visualizes ScriptableObjects in a spreadsheet-like matrix, allowing real-time editing of nested data classes and seamless integration with Unity's Undo system.</p>
+            
+            <div class="tools-grid">
+                <div class="tools-media">
+                    <iframe src="https://drive.google.com/file/d/1GJSnWeykNh_fzNhMBORrnHZjgqgcU-DA/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
+                <div class="tools-media">
+                    <img src="https://raw.githubusercontent.com/saptale/ScriptableObject-Spreadsheet-Unity-Editor/main/Assets/Example/ScreenshotsForRepo/MainWindow.png" alt="ScriptableObject Spreadsheet Interface">
+                </div>
+            </div>
+
+            <div class="tags">
+                <span class="tag">UI Toolkit</span>
+                <span class="tag">C# Reflection</span>
+                <span class="tag">Editor Scripting</span>
+                <span class="tag">Workflow Optimization</span>
+                <a href="https://github.com/saptale/ScriptableObject-Spreadsheet-Unity-Editor" target="_blank" style="margin-left: 10px; font-weight: bold;">[View on GitHub]</a>
+            </div>
+        </div>
 
         <div class="project">
             <h3>Interactive 3D Wardrobe Configurator (Commercial B2B/B2C)</h3>
@@ -153,7 +182,7 @@
         <div class="tags">
             <span class="tag">C#</span> <span class="tag">Unity</span> <span class="tag">OOP</span> 
             <span class="tag">Design Patterns</span> <span class="tag">Legacy Code Refactoring</span> 
-            <span class="tag">Gameplay Programming</span> <span class="tag">Git</span>
+            <span class="tag">Gameplay Programming</span> <span class="tag">Editor Scripting</span> <span class="tag">Git</span>
         </div>
     </section>
 
