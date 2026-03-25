@@ -1,35 +1,61 @@
-# Evgenii Maklaev — Personal Portfolio 🚀
+# Evgenii Maklaev — Middle Unity Engineer 🚀
 
-[![Website Status](https://img.shields.io/badge/Website-Live-brightgreen.svg)](https://saptale.github.io/)
-[![GitHub Repositories](https://img.shields.io/badge/GitHub-My%20Projects-181717.svg?logo=github)](https://github.com/saptale?tab=repositories)
+<p align="left">
+  <a href="https://saptale.github.io/"><img src="https://img.shields.io/badge/Website-Live-brightgreen.svg?style=for-the-badge" /></a>
+  <a href="https://github.com/saptale?tab=repositories"><img src="https://img.shields.io/badge/GitHub-My%20Code-181717.svg?style=for-the-badge&logo=github" /></a>
+  <a href="https://www.linkedin.com/in/evgenii-maklaev"><img src="https://img.shields.io/badge/LinkedIn-Profile-blue.svg?style=for-the-badge&logo=linkedin" /></a>
+</p>
 
-Welcome to the repository of my personal portfolio website. This page serves as a showcase of my commercial and indie projects, highlighting my skills in software architecture, game mechanics, and 3D application development.
-
-🌐 **Live Website:** [saptale.github.io](https://saptale.github.io/)  
-💻 **My Repositories & Code:** [github.com/saptale](https://github.com/saptale?tab=repositories)
-
-## 👨‍💻 About Me
-I am a **Middle Unity / C# Developer** with over 3.5 years of experience. I have solid commercial experience building complex interactive 3D applications (B2B/B2C) and game mechanics. I am capable of taking ownership of technical delivery, thriving in compact teams, and refactoring complex legacy code.
-
-## 🛠 Core Tech Stack
-* **Languages:** C#, Python (basics), Go (basics), C++ (basics)
-* **Game Engines:** Unity 3D / 2D, Unreal Engine 4/5
-* **Architecture:** OOP, Design Patterns, Legacy Code Refactoring
-* **GameDev Skills:** Gameplay Programming, Rapid Prototyping, Unity Physics, RigidBody Dynamics, URP/HDRP, UI Development
-* **Tools:** Git (GitHub), Visual Studio Code, Figma, Blender
-
-## 🎮 Featured Projects on the Website
-1. **Interactive 3D Wardrobe Configurator (Room107)** — Complex B2B/B2C commercial application with deep business logic.
-2. **Button Invaders (Room107)** — Strategic internal project (Lead Developer role) focused on core game loop logic and modern mechanics.
-3. **Vehicle Physics Core** — Custom vehicle physics and handling developed for the "Begin the Game" Jam (SMP Racing Winner).
-4. **Rapid Prototyping & Freelance** — Various high-efficiency gameplay prototypes developed for clients, including Yandex Games API integration.
-
-## 📫 Let's Connect
-Feel free to reach out if you have a project in mind, a job opportunity, or just want to chat about game development!
-
-* **Telegram:** [@eltalione](https://t.me/eltalione)
-* **LinkedIn:** [Evgenii Maklaev](https://www.linkedin.com/in/evgenii-maklaev)
-* **Email:** [evgeniimaklaev@bk.ru](mailto:evgeniimaklaev@bk.ru)
+I am a **Middle Unity / C# Developer** with 3.5+ years of experience in building high-performance 3D applications and game mechanics. I specialize in bridging the gap between game design and engineering by developing custom Editor tools and robust gameplay systems.
 
 ---
-*This portfolio is built using clean HTML/CSS and is hosted via GitHub Pages.*
+
+### 🛠 Tech Stack & Expertise
+
+| Category | Technologies |
+| :--- | :--- |
+| **Core** | C#, .NET, OOP, Design Patterns, SOLID |
+| **Unity** | URP/HDRP, UI Toolkit, Physics (RigidBody/Joints), Addressables |
+| **Tools & Pipelines** | Editor Scripting, Custom Inspectors, Reflection, Git |
+| **Graphics & 3D** | Blender, Figma, Basic Shaders, Lighting |
+| **Other** | Python (Basics), Go (Basics), C++ (Basics) |
+
+---
+
+### 🎮 Featured Work
+
+#### 🛠 [ScriptableObject Spreadsheet](https://github.com/saptale/ScriptableObject-Spreadsheet-Unity-Editor)
+*Custom Unity Editor Tool built with UI Toolkit.*
+* Automates game balancing by visualizing ScriptableObjects in a matrix.
+* Uses **C# Reflection** to parse nested data classes dynamically.
+* Full integration with Unity's Undo/Redo and Persistent State.
+
+#### 👗 [3D Wardrobe Configurator](https://saptale.github.io/)
+*Commercial B2B/B2C Application.*
+* Architected a complex interactive system for furniture customization.
+* Managed deep business logic and real-time 3D mesh interactions.
+
+#### 🏎 [Vehicle Physics Core](https://saptale.github.io/)
+*SMP Racing Jam Winner.*
+* Developed custom physics for realistic vehicle handling and suspension.
+
+---
+
+### 📊 GitHub Activity
+<p align="left">
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=saptale&layout=compact&langs_count=6&theme=dark&hide_border=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=saptale&show_icons=true&theme=dark&hide_border=true&count_private=true" />
+</p>
+
+---
+
+### 📫 Let's Connect
+I'm always open to discussing new projects, technical challenges, or game design workflows.
+
+* **Telegram:** [@eltalione](https://t.me/eltalione)
+* **Email:** [evgeniimaklaev@bk.ru](mailto:evgeniimaklaev@bk.ru)
+* **LinkedIn:** [Evgenii Maklaev](https://www.linkedin.com/in/evgenii-maklaev)
+
+<p align="center">
+  <i>"Writing clean code today to avoid refactoring tomorrow (mostly)."</i>
+</p>
