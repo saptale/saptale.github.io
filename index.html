@@ -30,24 +30,24 @@
         .tags { margin-top: 15px; }
         .tag { background: #333; padding: 5px 12px; border-radius: 4px; font-size: 0.85em; margin-right: 5px; display: inline-block; margin-bottom: 5px; color: #ccc;}
         
+        .video-container { width: 100%; border-radius: 8px; overflow: hidden; margin: 15px 0; border: 1px solid #333; background: #000; }
+        .video-container iframe { width: 100%; height: 450px; border: none; display: block; }
+        
+        .video-vertical { max-width: 300px; margin: 15px auto; border-radius: 8px; overflow: hidden; border: 1px solid #333; background: #000; }
+        .video-vertical iframe { width: 100%; height: 533px; border: none; display: block; }
+
         .tools-grid { display: flex; gap: 15px; margin: 15px 0; align-items: stretch; }
         .tools-media { flex: 1; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; display: flex; align-items: center; }
         .tools-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .tools-media iframe { width: 100%; height: 300px; border: none; display: block; }
 
-        .video-container { width: 100%; border-radius: 8px; overflow: hidden; margin: 15px 0; border: 1px solid #333; background: #000; }
-        .video-container iframe { width: 100%; height: 450px; border: none; display: block; }
-        
-        .freelance-grid { display: flex; gap: 15px; margin: 15px 0; flex-wrap: wrap; }
-        .freelance-item { flex: 1; min-width: 250px; border: 1px solid #333; border-radius: 8px; overflow: hidden; background: #000; }
-        .freelance-item iframe { width: 100%; height: 250px; border: none; display: block; }
-
         .skills-category { margin-bottom: 20px; }
         .skills-category h4 { margin-bottom: 10px; color: #aaa; text-transform: uppercase; font-size: 0.8em; letter-spacing: 1px; }
 
         @media (max-width: 768px) {
-            .tools-grid, .freelance-grid { flex-direction: column; }
+            .tools-grid { flex-direction: column; }
             .video-container iframe { height: 280px; }
+            .video-vertical { max-width: 100%; }
             .contact-links { gap: 10px; }
         }
     </style>
@@ -118,6 +118,42 @@
         </div>
 
         <div class="project">
+            <h3>Chicken Escape (Endless Runner Prototype)</h3>
+            <p><strong>Format:</strong> Personal Project / Mobile Prototype</p>
+            <p>Subway Surfers-style endless runner featuring lane-switching mechanics, obstacle avoidance, and a collectible system. Focused on responsive mobile controls and procedural environment spawning.</p>
+            <div class="video-vertical">
+                <iframe src="https://drive.google.com/file/d/1EFmW0nfoIgAWp7AAOcmaT27wRcmIZ8uM/preview" allowfullscreen></iframe>
+            </div>
+            <div class="tags">
+                <span class="tag">Runner Mechanics</span> <span class="tag">Mobile Controls</span> <span class="tag">Procedural Spawning</span> <span class="tag">Casual</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Black Hole Devourer (Hyper-casual Prototype)</h3>
+            <p><strong>Format:</strong> Personal Project / Mobile Prototype</p>
+            <p>Experimental mobile prototype focusing on satisfying physics interactions and dynamic object scaling. Implemented a "growth" mechanic where the hole expands based on devoured meshes.</p>
+            <div class="video-vertical">
+                <iframe src="https://drive.google.com/file/d/1EriPQH9MxjtfR_M2VJReo4c35is2VQdJ/preview" allowfullscreen></iframe>
+            </div>
+            <div class="tags">
+                <span class="tag">Mobile Prototyping</span> <span class="tag">Physics Logic</span> <span class="tag">Mesh Scaling</span> <span class="tag">Hyper-casual</span>
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Undead Conquest (Strategy Prototype)</h3>
+            <p><strong>Format:</strong> Personal Project / Gameplay Prototype</p>
+            <p>A "Age of War" style strategy game featuring a skeleton army. Developed wave management systems, unit AI logic, and dynamic lane-based combat mechanics.</p>
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1kohJ6XU70KZI67dBLQD5Ao-Bvbq74PLe/preview" allowfullscreen></iframe>
+            </div>
+            <div class="tags">
+                <span class="tag">Strategy Logic</span> <span class="tag">Wave System</span> <span class="tag">Unit AI</span>
+            </div>
+        </div>
+
+        <div class="project">
             <h3>Vehicle Physics & Core Mechanics</h3>
             <p><strong>Role:</strong> Core Developer | <strong>Format:</strong> Jam Winner</p>
             <p>Custom vehicle physics focused on realistic handling, suspension tuning, and rigid body mechanics.</p>
@@ -132,28 +168,24 @@
 
     <section id="skills">
         <h2>Core Skills</h2>
-        
         <div class="skills-category">
             <h4>Languages & Engines</h4>
             <div class="tags">
-                <span class="tag">C# (.NET)</span> <span class="tag">Unity (3D/2D)</span> <span class="tag">URP / HDRP</span> <span class="tag">Python (Basics)</span> <span class="tag">Go (Basics)</span>
+                <span class="tag">C# (.NET)</span> <span class="tag">Unity (3D/2D)</span> <span class="tag">URP / HDRP</span> <span class="tag">Python (Basics)</span>
             </div>
         </div>
-
         <div class="skills-category">
             <h4>Architecture & Patterns</h4>
             <div class="tags">
                 <span class="tag">OOP / SOLID</span> <span class="tag">Design Patterns</span> <span class="tag">Legacy Code Refactoring</span> <span class="tag">Dependency Injection</span> <span class="tag">MVC / MVP</span>
             </div>
         </div>
-
         <div class="skills-category">
             <h4>Editor & Workflow</h4>
             <div class="tags">
                 <span class="tag">Editor Scripting</span> <span class="tag">UI Toolkit</span> <span class="tag">C# Reflection</span> <span class="tag">Addressables</span> <span class="tag">Git / GitFlow</span>
             </div>
         </div>
-
         <div class="skills-category">
             <h4>Physics & Gameplay</h4>
             <div class="tags">
